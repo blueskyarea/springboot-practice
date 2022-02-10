@@ -3,6 +3,9 @@ spring-boot1/.classpath
 spring-boot1/.project
 spring-boot1/.settings/
 spring-boot1/target/
+spring-boot1/.mvn/
+spring-boot1/mvnw
+spring-boot1/mvnw.cmd
 spring-boot2/.classpath
 spring-boot2/.project
 spring-boot2/.settings/
