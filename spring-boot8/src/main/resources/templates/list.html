@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="httpp://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Message Application</title>
+</head>
+<body>
+  <h3>Message Please</h3>
+  <form th:action="@{/add}" th:object="${message}" method="post">
+    <label for="content">Message:</label>
+    <input type="text" th:field="*{content}">
+    <button>Submit</button>
+    <br>
+    <small style="color: red" th:errors="*{content}"></small>
+  </form>
+  <br>
+  <h3>Message List</h3>
+  <div th:each="message : ${messages}">
+    <div>[[${message.id}]] - [[${message.content}]]</div>
+  </div>
+</body>
+</html>
