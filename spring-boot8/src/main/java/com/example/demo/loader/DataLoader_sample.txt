@@ -15,6 +15,12 @@ public class DataLoader implements CommandLineRunner {
 	
 	@Override
 	public void run(String... args) throws Exception {
-		// TODO: Please implement here
+		Message message = new Message();
+		message.setContent("How are you today?");
+		repository.save(message);
+		
+		message = new Message();
+		message.setContent("Fine!");
+		repository.save(message);
 	}
 }

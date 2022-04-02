@@ -32,7 +32,7 @@ public class MessageController {
 		if (result.hasErrors()) {
 			return "list";
 		}
-		// TODO: Please implement here
+		repository.save(message);
 		return "redirect:/";
 	}
 }
