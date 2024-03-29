@@ -1,4 +1,5 @@
 .metadata
+.vscode
 spring-boot1/.classpath
 spring-boot1/.project
 spring-boot1/.settings/
